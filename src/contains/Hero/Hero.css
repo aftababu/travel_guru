@@ -1,0 +1,193 @@
+.hero {
+  max-width: 95vw;
+  margin: 6rem auto 0;
+
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  /* overflow: hidden; */
+}
+.heroCarousel,
+.heroDetail {
+  z-index: 3;
+  flex: 1;
+}
+.heroCarousel {
+  max-width: 55vw;
+}
+.mySwiper {
+  height: 38rem;
+}
+.swiper-slide {
+  /* margin-left: 0.8rem; */
+}
+
+.swiperItem,
+.swiperItem img {
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  border-radius: 1.5rem;
+  /* position: relative; */
+}
+.swiper-slide-active img {
+  border: 3px solid rgb(228, 177, 10);
+  border-radius: 2rem;
+}
+/* .carouselBtn {
+  position: absolute;
+} */
+.carouselBtn button {
+  z-index: 3;
+  background: #fff;
+  position: relative;
+  bottom: 0;
+  left: 0%;
+  margin: 0 0.6rem;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.carouselBtn button:hover {
+  background: #fffffff5;
+}
+.carouselBtn button svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+/* .swiperItem img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.651);
+} */
+.swiperText {
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  /* left: 50%; */
+  bottom: 50px;
+  text-align: left;
+  padding-left: 2rem;
+  font-weight: bold;
+  font-family: raleway;
+  /* transform: translateX(-5%); */
+}
+.heroDetail {
+  color: #fff;
+  font-family: 'Menlo', sans-serif;
+  max-width: 35%;
+  transform: translateY(-25%);
+}
+.heroDetail h3 {
+  line-height: 2;
+  font-size: 5.2rem;
+  font-stretch: 3;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+.heroDetail p {
+  font-family: raleway;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  /* letter-spacing: 1.1px; */
+  word-spacing: 1.3px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.bookingBtn {
+  background-color: rgb(255, 171, 14);
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2.5rem;
+  color: #1a1a1acb;
+  font-weight: bold;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.bookingBtn:hover {
+  background-color: rgb(241, 160, 9);
+}
+.carouselBtn button:disabled {
+  background: #ffffff56;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mySwiper {
+    height: 40vw;
+  }
+  .swiperItem,
+  .swiper-slide,
+  .swiperItem img {
+    width: 22vw;
+    margin: 0px;
+    height: 35vw;
+  }
+
+  .carouselBtn button {
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .hero {
+    max-width: 90vw;
+    margin: 3rem auto;
+  }
+  .heroDetail h3 {
+    font-size: 3.2rem;
+  }
+
+  .mySwiper {
+    height: 30rem;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .swiperItem,
+  .swiperItem img {
+    width: 16rem;
+    margin: 0px;
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 465px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 1rem auto;
+  }
+  .mySwiper {
+    width: 100vw;
+    transform: translateX(-22%);
+    height: 25rem;
+  }
+  .carouselBtn {
+    text-align: center;
+  }
+  .carouselBtn button {
+    bottom: -10px;
+  }
+  .heroDetail {
+    max-width: fit-content;
+    transform: translateY(1%);
+  }
+}

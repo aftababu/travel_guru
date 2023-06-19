@@ -1,0 +1,121 @@
+.loginContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(2, 2, 2, 0.445);
+  /* position: relative; */
+  /* z-index: 0; */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.form-group input[type='text'],
+.form-group input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+.form-group input[type='text']:focus,
+.form-group input[type='password']:focus {
+  border-bottom: 1px solid #000;
+}
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(226, 147, 0);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: rgb(241, 162, 13);
+}
+
+.form-group .form-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-group .form-footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.oauth-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.oauth-buttons button {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.oauth-buttons button.google {
+  background-color: #db4437;
+  color: #fff;
+}
+
+.oauth-buttons button.facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.oauth-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 465px) {
+  .loginContainer {
+    margin-top: 2rem !important;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group input[type='text'],
+  .form-group input[type='password'] {
+    font-size: 14px;
+  }
+
+  .form-group button {
+    font-size: 14px;
+  }
+
+  .oauth-buttons button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
